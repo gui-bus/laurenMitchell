@@ -9,11 +9,11 @@ const Header = () => {
         width={0}
         height={0}
         sizes="100vw"
-        className="h-auto w-40"
+        className="h-auto w-44"
         priority
       />
 
-      <button className="rounded-2xl bg-laurenBlue p-4 text-xs font-black text-white transition-all duration-300 ease-in-out hover:bg-laurenBlue/80">
+      <button className="rounded-2xl bg-laurenBlue p-4 text-xs font-bold text-white transition-all duration-300 ease-in-out hover:bg-laurenBlue/80">
         Agendar Consulta
       </button>
     </header>
