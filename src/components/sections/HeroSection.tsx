@@ -5,7 +5,7 @@ import Lauren from "../../../public/lauren-01.png";
 
 const HeroSection = () => {
   return (
-    <section className="w-full max-w-[90%] mx-auto flex flex-col md:flex-row items-center justify-around my-5 gap-8">
+    <section className="w-full max-w-[90%] mx-auto flex flex-col md:flex-row items-center justify-around gap-8 mb-10">
       <div className="flex flex-col items-center justify-center text-center gap-4">
         <h1 className="uppercase text-2xl md:text-4xl font-black text-laurenBlue">
           Sorria com confiança
