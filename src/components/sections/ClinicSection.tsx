@@ -30,7 +30,7 @@ const items: { title: string; text: string }[] = [
 const ClinicSection = () => {
   return (
     <section className="w-full max-w-[90%] mx-auto">
-      <div className="mb-10 bg-[#F5F5F5] flex flex-col md:flex-row items-center justify-around py-10 px-5 md:px-0 rounded-3xl">
+      <div className="mb-10 bg-[#F5F5F5] flex flex-col lg:flex-row items-center justify-around py-10 px-5 rounded-3xl gap-8">
         <div className="flex flex-col items-center justify-center">
           <h2 className="font-light text-2xl md:text-4xl text-center mb-5">
             Conheça melhor a Clínica
@@ -38,14 +38,14 @@ const ClinicSection = () => {
           <div className="flex flex-col items-start justify-start py-6 gap-6">
             {items.map((item, index) => (
               <div
-                className="flex items-center justify-center gap-4 p-2 w-full max-w-md"
+                className="flex items-center justify-center gap-6 p-2 w-full max-w-md"
                 key={index}
               >
                 <span>
                   <BsFillPatchCheckFill size={70} className="text-laurenBlue" />
                 </span>
 
-                <div className="flex flex-col items-center justify-center gap-1 w-full text-center">
+                <div className="flex flex-col items-start justify-start gap-1 w-full">
                   <h3 className=" md:text-xl font-medium">{item.title}</h3>
                   <p className="font-light text-sm">{item.text}</p>
                 </div>
@@ -60,7 +60,7 @@ const ClinicSection = () => {
           height={0}
           sizes="100vw"
           alt="Consultório"
-          className="w-full md:max-w-[50%] h-full object-cover"
+          className="w-full lg:max-w-[50%] h-full object-cover md:px-10 lg:px-0"
         />
       </div>
     </section>
