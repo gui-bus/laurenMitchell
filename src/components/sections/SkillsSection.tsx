@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-import Consultorio from "../../../public/consultorio-01.png";
+import Consultorio from "../../../public/consultorio-01.jpg";
 
 const skills: { title: string; text: string }[] = [
   {
@@ -32,18 +32,18 @@ const skills: { title: string; text: string }[] = [
 
 const SkillsSection = () => {
   return (
-    <section className="mb-10">
+    <section className="mb-10 w-full max-w-[90%] mx-auto">
       <Image
         src={Consultorio}
         width={0}
         height={0}
         sizes="100vw"
         alt="Consultório"
-        className="w-full h-72 object-cover"
+        className="w-full h-full max-h-44 md:max-h-72 object-cover rounded-t-3xl"
       />
 
-      <div className="bg-[#F5F5F5] w-full h-fit flex flex-col items-center justify-center py-6">
-        <h2 className="font-semibold text-xl md:text-2xl">
+      <div className="bg-[#F5F5F5] w-full h-fit flex flex-col items-center justify-center py-10 rounded-b-3xl">
+        <h2 className="font-semibold text-xl md:text-2xl text-center">
           <span className="font-light">Especialidades da</span> Dra. Lauren
           Mitchell
         </h2>
