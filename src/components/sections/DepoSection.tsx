@@ -43,11 +43,11 @@ const DepoSection = () => {
       <h3 className="font-black text-laurenBlue text-center text-2xl uppercase">
         Venha transformar o seu sorriso!
       </h3>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-4 my-7 select-none">
+      <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap items-center justify-center gap-4 my-7 select-none">
         {depos.map((depo, index) => (
           <div
             key={index}
-            className="w-[400px] h-fit rounded-xl bg-[#F5F5F5] flex flex-col items-center justify-center text-center p-5 gap-3"
+            className="lg:w-[400px] md:w-full h-fit rounded-3xl bg-[#F5F5F5] flex flex-col items-center justify-center text-center p-5 gap-3"
           >
             <h4 className="font-semibold text-lg">{depo.name}</h4>
             <p className="text-sm">{depo.text}</p>

@@ -29,12 +29,12 @@ const items: { title: string; text: string }[] = [
 
 const ClinicSection = () => {
   return (
-    <section className="w-full max-w-[90%] mx-auto">
-      <div className="mb-10 bg-[#F5F5F5] flex flex-col lg:flex-row items-center justify-around py-10 px-5 rounded-3xl gap-8">
+    <section className="w-full max-w-[90%] mx-auto bg-[#F5F5F5] pt-8 rounded-3xl">
+      <h2 className="font-light text-2xl md:text-4xl text-center">
+        Conheça melhor a Clínica
+      </h2>
+      <div className="mb-10 bg-[#F5F5F5] flex flex-col lg:flex-row items-center justify-around pb-10 px-5 rounded-3xl gap-8">
         <div className="flex flex-col items-center justify-center">
-          <h2 className="font-light text-2xl md:text-4xl text-center mb-5">
-            Conheça melhor a Clínica
-          </h2>
           <div className="flex flex-col items-start justify-start py-6 gap-6">
             {items.map((item, index) => (
               <div
